@@ -1,7 +1,7 @@
 const s1 = new Promise((resolve,reject)=>{
     setTimeout(()=>resolve("s1 Sucess"),3000)
 })
-
+ 
 const s2 = new Promise((resolve,reject)=>{
     setTimeout(()=>resolve("s2 Sucess"),5000)
 })
