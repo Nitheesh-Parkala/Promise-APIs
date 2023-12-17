@@ -1,19 +1,18 @@
-// const p1 = new Promise((resolve,reject)=>{
-//     setTimeout(()=>resolve("P1 Sucess"),3000)
-// })
+const k1 = new Promise((resolve,reject)=>{
+    setTimeout(()=>resolve("k1 Sucess"),3000)
+})
 
-// const p2 = new Promise((resolve,reject)=>{
-//     setTimeout(()=>resolve("P2 Sucess"),1000)
-// })
+const k2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>resolve("k2 Sucess"),1000)
+})
 
-// const p3 = new Promise((resolve,reject)=>{
-//     setTimeout(()=>resolve("P3 Sucess"),5000)
-// })
+const k3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>resolve("k3 Sucess"),5000)
+})
 
-// Promise.all([p1,p2,p3]).then(res=>{
-//     console.log(res);
-// });
-
+Promise.all([k1,k2,k3]).then(res=>{
+    console.log(res);
+});
 
 //what if one of the array in [p1,p2,p3]will fail example:
 const p1 = new Promise((resolve,reject)=>{
